@@ -1,0 +1,167 @@
+.card {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 12px;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-id {
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.card-avatar-wrapper {
+    position: relative;
+    width: 28px;
+    height: 28px;
+}
+
+.card-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+.availability-dot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.availability-dot.online {
+    background-color: #10b981;
+}
+
+.availability-dot.offline {
+    background-color: #6b7280;
+}
+
+.card-title {
+    font-size: 14px;
+    color: #111827;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.card-description {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.card-avatars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.card-avatar-small {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+.avatar-more {
+    background-color: #e5e7eb;
+    color: #374151;
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-footer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.priority-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e7eb;
+}
+
+.priority-icon {
+    font-size: 12px;
+}
+
+.card-tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.tag-dot {
+    color: #9ca3af;
+    font-size: 8px;
+}
+
+.card-date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #6b7280;
+    padding-top: 8px;
+    border-top: 1px solid #f3f4f6;
+}
+
+.date-icon {
+    font-size: 14px;
+}
+
+.time-btn {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: #6b7280;
+    font-size: 11px;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+.time-btn:hover {
+    background-color: #f3f4f6;
+}

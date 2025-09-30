@@ -1,0 +1,25 @@
+.board {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 24px;
+    min-height: calc(100vh - 120px);
+}
+
+.board::-webkit-scrollbar {
+    height: 8px;
+}
+
+.board::-webkit-scrollbar-track {
+    background: #f3f4f6;
+    border-radius: 4px;
+}
+
+.board::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 4px;
+}
+
+.board::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
