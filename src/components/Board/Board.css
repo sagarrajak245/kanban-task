@@ -1,7 +1,8 @@
 .board {
     display: flex;
+    flex-wrap: wrap;
+    /* Add this line to allow wrapping */
     gap: 20px;
-    overflow-x: auto;
     padding: 20px 24px;
     min-height: calc(100vh - 120px);
 }

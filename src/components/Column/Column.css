@@ -1,6 +1,6 @@
 .column {
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 280px;
+    flex: 1;
     border-radius: 12px;
     padding: 16px;
     transition: background-color 0.2s;
@@ -109,4 +109,26 @@
 
 .add-task-btn span {
     font-size: 16px;
+}
+
+
+/* Media query for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    .column {
+        min-width: 320px;
+        /* Allow columns to be a bit wider on tablets */
+    }
+}
+
+/* Media query for screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+    .column {
+        /* Make the column take up the full width minus padding */
+        min-width: calc(100% - 48px);
+    }
+
+    .board {
+        /* Adjust board padding for mobile if needed */
+        padding: 10px;
+    }
 }
